@@ -1,82 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lost and Found</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <header>
-    <h1>Campus Lost &amp; Found</h1>
-    <p>Report a lost item or something you found</p>
-  </header>
-
-  <main>
-    <section class="form-section">
-      <h2>Add New Report</h2>
-      <form id="itemForm">
-        <div class="form-row">
-          <label>
-            Type
-            <select id="type" required>
-              <option value="lost">Lost</option>
-              <option value="found">Found</option>
-            </select>
-          </label>
-
-          <label>
-            Item Title
-            <input type="text" id="title" placeholder="e.g. Black Wallet" required />
-          </label>
-        </div>
-
-        <label>
-          Description
-          <textarea id="description" placeholder="Describe the item..." required></textarea>
-        </label>
-
-        <div class="form-row">
-          <label>
-            Location
-            <input type="text" id="location" placeholder="e.g. Library, 2nd floor" required />
-          </label>
-
-          <label>
-            Contact Info
-            <input type="text" id="contact" placeholder="Email or phone number" required />
-          </label>
-        </div>
-
-        <button type="submit">Submit Report</button>
-      </form>
-      <p id="formMessage"></p>
-    </section>
-
-    <section class="list-section">
-      <div class="list-header">
-        <h2>All Reports</h2>
-        <div class="filters">
-          <input type="text" id="searchBox" placeholder="Search items..." />
-          <select id="filterType">
-            <option value="all">All</option>
-            <option value="lost">Lost</option>
-            <option value="found">Found</option>
-          </select>
-        </div>
-      </div>
-
-      <div id="itemsContainer" class="items-grid">
-        <p>Loading items...</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>Full Stack Project &mdash; Lost and Found System</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>frontend</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
